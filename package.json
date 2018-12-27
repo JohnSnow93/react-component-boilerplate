@@ -14,13 +14,14 @@
   },
   "homepage": "https://github.com/JohnSnow93/react-component-boilerplate#readme",
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "prop-types": "^15.6.0"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "prop-types": "^15.0",
+    "classnames": "^2.2.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch",
+    "dev": "webpack --watch",
     "build": "set NODE_ENV=production && webpack"
   },
   "author": {
