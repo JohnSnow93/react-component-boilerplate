@@ -8,7 +8,12 @@
     "boilerplate",
     "react-drawer"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "es/index.js",
+  "files": [
+    "dist",
+    "es"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JohnSnow93/react-component-boilerplate.git"
@@ -55,9 +60,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config ./config/webpack.config.dev.js",
-    "build": "set NODE_ENV=production && webpack",
-    "start:dev": "webpack-dev-server --config ./config/webpack.config.dev.js"
+    "build": "set NODE_ENV=production && webpack --config ./config/webpack.config.prod.js",
+    "pub": "npm run build && npm publish",
+    "dev": "webpack-dev-server --config ./config/webpack.config.dev.js"
   },
   "author": {
     "name": "johnsnow93",
