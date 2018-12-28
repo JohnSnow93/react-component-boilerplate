@@ -1,16 +1,22 @@
 module.exports = {
-    module: {
-        rules: [{
-            test: /\.js?$/,
-            loader: 'babel-loader',
-            exclude: '/node_modules/',
-            options: {
-                presets: ['react', 'stage-0', ['env', {
-                    targets: {
-                        browsers: ['last 2 versions']
-                    }
-                }]]
-            }
+  module: {
+    rules: [
+      {
+        test: /\.js?$/,
+        loader: 'babel-loader',
+        exclude: '/node_modules/',
+      },
+      {
+        test: /\.less$/,
+        exclude: '/node_modules/',
+        use: [{
+          loader: 'style-loader' // creates style nodes from JS strings
+        }, {
+          loader: 'css-loader' // translates CSS into CommonJS
+        }, {
+          loader: 'less-loader' // compiles Less to CSS
         }]
-    }
+      }
+    ]
+  }
 }

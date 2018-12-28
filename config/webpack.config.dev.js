@@ -1,14 +1,23 @@
 const path = require('path');
 const merge = require('webpack-merge');
-const baseConfig = require('./webpack.base.js')
+const baseConfig = require('./webpack.base.js');
 
 const devConfig = {
-  entry: '../doc/index.js',
+  entry: './demo/index.js',
   mode: 'development',
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'public')
-  }
+    filename: 'index.bundle.js',
+    path: path.resolve(__dirname, '../demo')
+  },
+  devServer: {
+    contentBase: path.join(__dirname, '../demo'),
+    compress: true,
+    port: 9000,
+    open: true
+  },
+  plugins: [
+    // new HtmlWebpackPlugin(HtmlWebpackPluginConfig)
+  ]
 }
 
 module.exports = merge(devConfig, baseConfig);
