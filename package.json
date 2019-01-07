@@ -51,6 +51,7 @@
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.28.0",
     "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.26.0",
     "webpack-bundle-analyzer": "^3.0.3",
@@ -61,6 +62,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "set NODE_ENV=production && webpack --config ./config/webpack.config.prod.js",
+    "build:es": "set NODE_ENV=production && webpack --config ./config/webpack.config.prod.es.js",
     "pub": "npm run build && npm publish",
     "dev": "webpack-dev-server --config ./config/webpack.config.dev.js"
   },

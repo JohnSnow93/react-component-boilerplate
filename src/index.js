@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './styles/style.less';
 
 export default class Pad extends Component {
   state = {
@@ -76,11 +76,13 @@ export default class Pad extends Component {
 
   render() {
     return (
-      <canvas
-        ref={(c) => { this.canvas = c; }}
-      >
-        Unsupported Browser
-      </canvas>
+      <div className="hhh">
+        <canvas
+          ref={(c) => { this.canvas = c; }}
+        >
+          Unsupported Browser
+        </canvas>
+      </div>
     );
   }
 }
