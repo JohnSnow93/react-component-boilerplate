@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './styles/style.less';
+import testPng from './assets/test.png';
+import testSvg from './assets/test.svg';
 
 export default class Pad extends Component {
   state = {
@@ -77,6 +79,8 @@ export default class Pad extends Component {
   render() {
     return (
       <div className="hhh">
+        <img src={testPng} alt=""/>
+        <img src={testSvg} alt=""/>
         <canvas
           ref={(c) => { this.canvas = c; }}
         >
