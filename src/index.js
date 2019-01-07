@@ -79,8 +79,6 @@ export default class Pad extends Component {
   render() {
     return (
       <div className="hhh">
-        <img src={testPng} alt=""/>
-        <img src={testSvg} alt=""/>
         <canvas
           ref={(c) => { this.canvas = c; }}
         >

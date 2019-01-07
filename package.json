@@ -1,12 +1,11 @@
 {
-  "name": "react-component-boilerplate",
+  "name": "react-simple-component-boilerplate",
   "version": "0.0.1",
   "description": "用于创建方便测试、可在npm上发布的react组件",
   "keywords": [
     "react",
     "component",
     "boilerplate",
-    "react-drawer"
   ],
   "main": "dist/index.js",
   "module": "es/index.js",
