@@ -30,9 +30,6 @@ const devConfig = {
       },
     ]
   },
-  plugins: [
-    // new HtmlWebpackPlugin(HtmlWebpackPluginConfig)
-  ]
 }
 
 module.exports = merge(devConfig, baseConfig);

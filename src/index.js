@@ -3,7 +3,7 @@ import './styles/style.less';
 import testPng from './assets/test.png';
 import testSvg from './assets/test.svg';
 
-export default class Pad extends Component {
+  export default class Pad extends Component {
   state = {
     isMouseDown: false,
     lastCordinate: { x: 0, y: 0 },

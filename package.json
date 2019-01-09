@@ -5,7 +5,7 @@
   "keywords": [
     "react",
     "component",
-    "boilerplate",
+    "boilerplate"
   ],
   "main": "dist/index.js",
   "module": "es/index.js",
